@@ -174,8 +174,8 @@
             <properties>
               <background color="-1"/>
               <foreground color="-16777216"/>
-              <label value="Преобразовать"/>
-              <text value="Преобразовать"/>
+              <label value="Выполнить всё"/>
+              <text value="Выполнить всё"/>
             </properties>
           </component>
           <component id="54648" class="javax.swing.JButton" binding="buttonTriangle">

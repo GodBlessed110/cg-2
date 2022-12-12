@@ -41,9 +41,11 @@ public class DrawForm extends JFrame {
     private Rectangle2D rect;
     private Shape shape;
     private Point p1 = new Point(350, 350);
-    private Point p2 = new Point(350, 250);
-    private Point p3 = new Point(450, 250);
-    private Point p4 = new Point(450, 350);
+    private Point p2 = new Point(350 + 100, 350);
+    private Point p3 = new Point(350 + 150, 350 - 100*Math.sqrt(3)/2);
+    private Point p4 = new Point(350 + 100, 350 -100*Math.sqrt(3));
+    private Point p5 = new Point(350, 350 - 100*Math.sqrt(3));
+    private Point p6 = new Point(350 - 50, 350 - 100*Math.sqrt(3)/2);
     private Stack<Shape> stackTransformations;
 
 
@@ -59,7 +61,7 @@ public class DrawForm extends JFrame {
         textFieldCompX.setText("1");
         textFieldCompY.setText("1");
 
-        shape = new Shape(new Point[]{p1,p2,p3,p4});
+        shape = new Shape(new Point[]{p1,p2,p3,p4,p5,p6});
         drawPanel = new DrawPanel(shape);
         panelDraw.add(drawPanel);
         stackTransformations = new Stack<>();
